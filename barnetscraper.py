@@ -39,12 +39,13 @@ filtered_data=[]
 
 
 #next_page_url=driver.find_element(By.XPATH,'//a[@class="next"]').get_attribute('href')
-try:
+'''try:
     next_page=driver.find_element(By.XPATH,'//span[@class="showing"]/text()').text
     no_of_pages=int(next_page.split()[-1])
     print(no_of_pages)
 except Exception as e:
     no_of_pages=1
+'''
 
 #next_page=driver.find_element(By.XPATH,'//a[@class="next"]')
 while True:
